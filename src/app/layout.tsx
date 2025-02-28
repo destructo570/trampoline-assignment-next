@@ -1,10 +1,29 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   title: "Trampoline Assignment",
   description: "Trampoline Assignment",
 };
+
+export const macFont = localFont({
+  src: [
+    {
+      path: '../../public/fonts/blinkmacsystemfont-light.ttf',
+      weight: '300'
+    },
+    {
+      path: '../../public/fonts/blinkmacsystemfont-regular.ttf',
+      weight: '400'
+    },
+    {
+      path: '../../public/fonts/blinkmacsystemfont-medium.ttf',
+      weight: '500'
+    },
+  ],
+  variable: '--font-blink-mac'
+})
 
 export default function RootLayout({
   children,
@@ -14,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`${macFont.className} antialiased`}
       >
         {children}
       </body>

@@ -5,9 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-mac-300: var(--font-mac-300);
-  --font-mac-400: var(--font-mac-400);
-  --font-mac-500: var(--font-mac-500);
+  --color-primary-accent: #E7B343;
 }
 
 :root {
@@ -147,4 +145,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+h1, h2, h3{
+  font-weight: 500;
+}
+
+h2{
+  font-size: 30px;
 }
