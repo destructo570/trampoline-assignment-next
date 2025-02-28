@@ -3,8 +3,8 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <section className="text-center mt-14 p-4">
-      <section>
+    <section className="text-center mt-14">
+      <section className="p-4">
         <div className="sm:w-[580px] mx-auto">
           <h2>
             A Supplier That Has Your Back—So You Can Focus on What You Love.
@@ -32,7 +32,7 @@ const Testimonial = () => {
           />
         </div>
       </section>
-      <section className="bg-secondary-accent text-white flex flex-col items-center gap-8 mt-12 px-4 pt-8 pb-14 border-b-8 border-primary-accent">
+      <section className="bg-secondary-accent text-white flex flex-col items-center gap-8 mt-12 pt-8 pb-14 border-b-8 border-primary-accent">
         <h2>Why Customers Keep Coming Back</h2>
         <div className="flex flex-col sm:flex-row">
           <div className="py-4 px-8 sm:border-r border-secondary-surface border-dashed">
