@@ -2,16 +2,8 @@ import React from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { CountrySelector } from "@/components/common/country-selector";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
+import Tag from "@/components/common/tag";
 
 const RegistrationForm = () => {
   return (
@@ -53,26 +45,16 @@ const RegistrationForm = () => {
         </div>
         <div>
           <p className="mb-2">Type of Buisiness</p>
-          <Select>
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Select a buidiness type" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                <SelectLabel>Select</SelectLabel>
-                <SelectItem value="furniture_store">Furniture Store</SelectItem>
-                <SelectItem value="ecommerce">Online Ecommerce Site</SelectItem>
-                <SelectItem value="department">Department Store</SelectItem>
-                <SelectItem value="garden">Garden Centre</SelectItem>
-                <SelectItem value="gift_store">Gift Store</SelectItem>
-                <SelectItem value="interior_designer">
-                  Interior Designer
-                </SelectItem>
-                <SelectItem value="hotel">Hotel / Care Home</SelectItem>
-                <SelectItem value="other">Other</SelectItem>
-              </SelectGroup>
-            </SelectContent>
-          </Select>
+          <div className="flex gap-2 flex-wrap">
+            <Tag title="Furniture Store" />
+            <Tag title="Online Ecommerce Site" />
+            <Tag title="Department Store" />
+            <Tag title="Garden Centre" />
+            <Tag title="Gift Store" />
+            <Tag title="Interior Designer" />
+            <Tag title="Hotel / Care Home" />
+            <Tag title="Other" />
+          </div>
           <div className="flex gap-2  mt-4">
             <Checkbox id="terms" />
             <label
