@@ -1,5 +1,6 @@
 import IconCard from "@/components/common/icon-card";
 import InfoPanel from "@/components/common/info-panel";
+import TestimonialCard from "@/components/common/testimonial-card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -161,11 +162,45 @@ export default function Home() {
       </section>
     );
   };
+
+  const testimonials = () => {
+    return (
+      <section className="text-center mt-14 p-4">
+        <div>
+          <h2>
+            A Supplier That Has Your Back—So You Can Focus on What You Love.
+          </h2>
+          <p>
+            {" "}
+            We believe that independent retailers and interior designers deserve
+            the same level of care, support, and pricing thatʼs typically
+            reserved for big-box chains. Youʼve got the vision; weʼve got the
+            resources and expertise to make it happen. Our dedicated sales
+            agents, including industry veterans, are always on hand to help you
+            choose the perfect pieces and navigate any challenges.
+          </p>
+        </div>
+        <div className="flex gap-4 mt-10 flex-col sm:flex-row justify-center">
+          <TestimonialCard
+            testimonial="“Trampoline saved our small boutique thousands. We finally  have unique, on-trend pieces that we can order in just the right  quantities. No more dead stock!ˮ"
+            name="Emily R."
+            place="Boutique Owner, London"
+          />
+          <TestimonialCard
+            testimonial="“I used to spend weeks chasing suppliers overseas. Now,  Trampoline handles everything—quality checks, shipping, even  flexible payments. Itʼs been a game-changer.ˮ"
+            name="Emily R."
+            place="Boutique Owner, London"
+          />
+        </div>
+      </section>
+    );
+  };
   return (
     <section className="max-w-[1200px] mx-auto">
       {heroSection()}
       {registerSection()}
       {featuresSection()}
+      {testimonials()}
     </section>
   );
 }
