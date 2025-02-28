@@ -40,7 +40,7 @@ const PromotionSection = () => {
         width={722}
         height={408}
         alt=""
-        className="sm:w-[50%]"
+        className="self-start sm:w-[55%]"
       />
     </section>
   );

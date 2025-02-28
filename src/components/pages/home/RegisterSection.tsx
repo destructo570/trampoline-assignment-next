@@ -4,10 +4,10 @@ import RegistrationForm from "./RegistrationForm";
 
 const RegisterSection = () => {
   return (
-    <section className="flex flex-col sm:flex-row gap-8 p-8">
+    <section className="flex flex-col sm:flex-row gap-8 px-8">
       <div className="sm:max-w-[50%] ">
         <div>
-          <h2 className="text-center sm:text-left">
+          <h2 className="text-center sm:text-left mt-8">
             Sourcing Struggles Are Real.
           </h2>
           <p className="text-center sm:text-left">

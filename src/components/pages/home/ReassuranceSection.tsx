@@ -16,28 +16,28 @@ const ReassuranceSection = () => {
         </Button>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-[100%]">
-        <div className="p-4 border-l-4 rounded-xl border-primary-accent">
+        <div className="p-4 border-l-5 rounded-xl border-primary-accent">
           <h3>Worried About Quality?</h3>
           <p>
             Our on-ground QC teams in India inspect every product. Our detailed
             quality control process ensures that what you see is what you get.
           </p>
         </div>
-        <div className="p-4 border-l-4 rounded-xl border-secondary-accent">
+        <div className="p-4 border-l-5 rounded-xl border-secondary-accent">
           <h3>Afraid of Large Investments?</h3>
           <p>
             We offer low or no MOQs and 30-day payment terms. Test new product
             lines with minimal risk.
           </p>
         </div>
-        <div className="p-4 border-l-4 rounded-xl border-primary-accent">
+        <div className="p-4 border-l-5 rounded-xl border-primary-accent">
           <h3>Need Unique Products?</h3>
           <p>
             Our collections let you brand products as your own, and we
             constantly update our catalog to follow the latest décor trends.
           </p>
         </div>
-        <div className="p-4 border-l-4 rounded-xl border-secondary-accent">
+        <div className="p-4 border-l-5 rounded-xl border-secondary-accent">
           <h3>Is Hassle & Complex Logistics?</h3>
           <p>
             We have stock in the UK for quick delivery, manage the freight for

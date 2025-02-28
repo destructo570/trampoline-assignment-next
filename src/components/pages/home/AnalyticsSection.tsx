@@ -45,7 +45,7 @@ const AnalyticsSection = () => {
           })}
         </div>
         <div className="sm:w-[50%] px-8">
-          <div className="border border-surface-border rounded-md ">
+          <div className="border border-surface-border rounded-md min-h-[400px]">
             <p className="px-4 py-2 border-b font-[500]">
               Retailer Price Breakdown for Furniture
             </p>

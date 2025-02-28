@@ -3,18 +3,18 @@ import React from "react";
 
 const CalloutSection = () => {
   return (
-    <section className="">
+    <section className="mt-14">
       <div className="text-center bg-[url(/images/image_4.png)] bg-[center] py-6 px-6">
         <h2 className="max-w-[582px] mx-auto ">
           Make Your Next Move the Easiest One Yet
         </h2>
-        <p className="max-w-[582px] mx-auto ">
+        <p className="max-w-[582px] mx-auto text-[20px]">
           You launched your retail or design business to showcase creativity,
           offer distinctive products, and delight customers. Let Trampoline
           handle the heavy lifting - so you can focus on curating unique
           experiences
         </p>
-        <p className="my-12 max-w-[400px] mx-auto">
+        <p className="my-12 max-w-[400px] mx-auto text-[18px]">
           Now is the time to reclaim control over your inventory, delight your
           customers with unique pieces, and watch your profits grow—with zero
           hassle

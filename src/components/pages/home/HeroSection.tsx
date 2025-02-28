@@ -21,7 +21,7 @@ const HeroSection = () => {
             Tailored for Independent Retailers & Designers.
           </p>
         </div>
-        <div className="mt-2 grid grid-cols-2 gap-2">
+        <div className="mt-6 grid grid-cols-2 gap-2">
           <IconCard title={"100% Quality Assurance"}>
             <Image src={"/icons/check.svg"} height={32} width={32} alt="" />
           </IconCard>

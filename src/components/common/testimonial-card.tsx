@@ -21,7 +21,7 @@ const TestimonialCard = ({
   };
   return (
     <Card className="p-8">
-      <h3>{testimonial}</h3>
+      <h3 className="text-left">{testimonial}</h3>
       <div className="flex gap-4 justify-between">
         <div className="flex gap-3">
           <Avatar className="w-[42px] h-[42px]">

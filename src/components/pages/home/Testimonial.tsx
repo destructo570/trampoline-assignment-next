@@ -5,7 +5,7 @@ const Testimonial = () => {
   return (
     <section className="text-center mt-14 p-4">
       <section>
-        <div>
+        <div className="sm:w-[580px] mx-auto">
           <h2>
             A Supplier That Has Your Back—So You Can Focus on What You Love.
           </h2>
@@ -32,24 +32,24 @@ const Testimonial = () => {
           />
         </div>
       </section>
-      <section className="bg-secondary-accent text-white flex flex-col items-center gap-8 mt-12 p-4 border-b-8 border-primary-accent">
+      <section className="bg-secondary-accent text-white flex flex-col items-center gap-8 mt-12 px-4 pt-8 pb-14 border-b-8 border-primary-accent">
         <h2>Why Customers Keep Coming Back</h2>
         <div className="flex flex-col sm:flex-row">
           <div className="py-4 px-8 sm:border-r border-secondary-surface border-dashed">
-            <h2>95%</h2>
-            <p className="max-w-[220px]">
+            <p className="text-[50px]">95%</p>
+            <p className="max-w-[220px] text-[20px]">
               of first-time buyers reorder within 2 months
             </p>
           </div>
           <div className="py-4 px-8 sm:border-r border-secondary-surface border-dashed">
-            <h2>1,000+</h2>
-            <p className="max-w-[220px]">
+            <p className="text-[50px]">1,000+</p>
+            <p className="max-w-[220px] text-[20px]">
               on-trend designs available across furniture, rugs, and décor
             </p>
           </div>
           <div className="py-4 px-8">
-            <h2>2-5 day</h2>
-            <p className="max-w-[220px]">UK shipping from local warehouses.</p>
+            <p className="text-[50px]">2-5 day</p>
+            <p className="max-w-[220px] text-[20px]">UK shipping from local warehouses.</p>
           </div>
         </div>
       </section>

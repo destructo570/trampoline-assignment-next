@@ -17,10 +17,10 @@ const RegistrationForm = () => {
   return (
     <div className="flex flex-col gap-3 bg-surface-light p-8 rounded-md">
       <div className="flex flex-col">
-        <span className="px-3 py-1 rounded-sm bg-primary-accent text-[10px] max-w-[97px]">
+        <span className="px-3 py-1 rounded-sm bg-primary-accent text-[10px] max-w-[97px] font-[500]">
           REGISTER NOW
         </span>
-        <h2>Register for free to unlock your access.</h2>
+        <h3>Register for free to unlock your access.</h3>
         <p>
           Please provide us the below details and we will create an account for
           you.
