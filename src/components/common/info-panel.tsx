@@ -12,7 +12,7 @@ const InfoPanel = ({
 }) => {
   return (
     <div
-      className={clsx("flex gap-8 items-start p-4", {
+      className={clsx("flex gap-8 items-start p-4 min-w-[450px]", {
         "bg-primary-accent rounded-lg": isActive,
         "flex-row-reverse text-right": rowReverse,
       })}
