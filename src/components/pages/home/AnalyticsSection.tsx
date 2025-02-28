@@ -18,19 +18,7 @@ const AnalyticsSection = () => {
       sub_title: "ARM: 40%+",
     },
   ]);
-  const roomCard = (data) => {
-    return (
-      <div className="max-w-[291px]">
-        <div className="relative">
-          <Image src={data.img} alt="" width={291} height={199} />
-          <div className="bg-light-green top-[8px] absolute right-[8px] rounded-sm px-1">
-            {data.sub_title}
-          </div>
-        </div>
-        <p className="text-[20px] font-[500]">{data.title}</p>
-      </div>
-    );
-  };
+
   return (
     <div className="mt-12">
       <div className="text-center">
@@ -42,8 +30,18 @@ const AnalyticsSection = () => {
       </div>
       <div className="flex flex-col sm:flex-row gap-6 mt-12">
         <div className="grid grid-cols-2 gap-6 px-8">
-          {roomCardData.map((data) => {
-            return roomCard(data);
+          {roomCardData.map((data, index) => {
+            return (
+              <div className="max-w-[291px]" key={`roomdata_${index}`}>
+                <div className="relative">
+                  <Image src={data.img} alt="" width={291} height={199} />
+                  <div className="bg-light-green top-[8px] absolute right-[8px] rounded-sm px-1">
+                    {data.sub_title}
+                  </div>
+                </div>
+                <p className="text-[20px] font-[500]">{data.title}</p>
+              </div>
+            );
           })}
         </div>
         <div className="sm:w-[50%] px-8">
@@ -74,7 +72,7 @@ const AnalyticsSection = () => {
               </div>
             </div>
           </div>
-          <p className="mt-6 px-8">
+          <p className="mt-6">
             Whether you want a laid-back boho vibe, sleek industrial edge, or
             cozy Japandi minimalism, Trampoline has you covered—without the
             massive minimums
