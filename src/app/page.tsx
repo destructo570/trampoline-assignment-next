@@ -140,7 +140,9 @@ export default function Home() {
               width={327}
               alt=""
             />
-            <Button>Register & Explore our Trade Prices</Button>
+            <Button className="bg-secondary-accent">
+              Register & Explore our Trade Prices
+            </Button>
           </div>
           <div>
             <InfoPanel
@@ -239,7 +241,9 @@ export default function Home() {
             hassle-free logistics—every detail is designed to keep your business
             thriving.
           </p>
-          <Button className="mt-8">Register to Explore Trampoline</Button>
+          <Button className="mt-8 bg-secondary-accent">
+            Register to Explore Trampoline
+          </Button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-[100%]">
           <div className="p-4 border-l-4 rounded-xl border-primary-accent">
@@ -304,7 +308,9 @@ export default function Home() {
               <p>Flexible 30-Day Payment Terms on all initial orders.</p>
             </div>
           </div>
-          <Button>Claim My £100 Off & Register Now</Button>
+          <Button className="bg-secondary-accent">
+            Claim My £100 Off & Register Now
+          </Button>
         </div>
         <Image
           src="/images/image_3.png"
@@ -321,7 +327,11 @@ export default function Home() {
     return (
       <section className="mt-10 p-8">
         <h2 className="text-center">FAQs.</h2>
-        <Accordion type="single" collapsible className="w-full flex flex-col gap-4 mt-8">
+        <Accordion
+          type="single"
+          collapsible
+          className="w-full flex flex-col gap-4 mt-8"
+        >
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-medium">
               What if my items arrive damaged?
@@ -354,15 +364,130 @@ export default function Home() {
     );
   };
 
+  const callOutAndContactSection = () => {
+    return (
+      <section className="">
+        <div className="text-center bg-[url(/images/image_4.png)] bg-[center] py-6 px-6">
+          <h2 className="max-w-[582px] mx-auto ">
+            Make Your Next Move the Easiest One Yet
+          </h2>
+          <p className="max-w-[582px] mx-auto ">
+            You launched your retail or design business to showcase creativity,
+            offer distinctive products, and delight customers. Let Trampoline
+            handle the heavy lifting - so you can focus on curating unique
+            experiences
+          </p>
+          <p className="my-12 max-w-[400px] mx-auto">
+            Now is the time to reclaim control over your inventory, delight your
+            customers with unique pieces, and watch your profits grow—with zero
+            hassle
+          </p>
+          <Button className="sm:text-2xl font-normal text-white bg-secondary-accent">
+            Register & Access Exclusive Wholesale Décor Now
+          </Button>
+          <p className="text-sm mt-2">
+            Join the community of savvy retailers and designers whoʼve made the
+            switch.
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-10 sm:gap-28 mt-16 p-8">
+          <div>
+            <h2 className="">Questions?</h2>
+            <h2 className="">We would love to talk.</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="border px-4 py-2 rounded-lg flex flex-col justify-center">
+              <p>Call our Trade Specialist</p>
+              <h3>0800-XXXX-XXXX </h3>
+            </div>
+            <div className="border px-4 py-2 rounded-lg flex flex-col justify-center">
+              <p>Email us at</p>
+              <h3>support@trampoline-store.com</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const createAccountSection = () => {
+    return (
+      <section className="bg-primary-accent flex flex-col items-center gap-8 mt-12 px-8 py-8 pb-6">
+        <div className="text-center">
+          <h2>No Confusion. No Headaches.</h2>
+          <h2>Just a Straightforward 3-Step Process</h2>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 px-6 relative">
+          <div className="flex bg-white border border-dashed border-black px-4 py-6 rounded-md sm:rounded-tl-3xl sm:rounded-bl-3xl rounded-tr-md rounded-br-md h-[264px] min-w-[378px]">
+            <h2 className="pr-2">01</h2>
+            <div className="flex flex-col gap-2 border-l border-black border-dashed px-2">
+              <p className="uppercase font-[500] min-h-[48px] mt-2">
+                Register for a Trade Account
+              </p>
+              <p className="text-[20px]">
+                Tell us about your business—quickly and painlessly.{" "}
+                <span className="text-primary-accent">Approval</span> is
+                typically within 24 hours.
+              </p>
+            </div>
+          </div>
+          <div className="flex bg-white border border-dashed border-black px-4 py-6 rounded-md h-[264px] min-w-[378px]">
+            <h2 className="pr-2">02</h2>
+            <div className="flex flex-col gap-2 border-l border-black border-dashed px-2">
+              <p className="uppercase font-[500] min-h-[48px] mt-2">
+                {" "}
+                Browse Curated Décor & Place Your Order
+              </p>
+              <p className="text-[20px]">
+                Choose from our{" "}
+                <span className="text-sky-blue">curated collections</span> of
+                furniture, rugs, wall accents, and more.
+              </p>
+            </div>
+          </div>
+          <div className="flex bg-white border border-dashed border-black px-4 py-6 rounded-md rounded-tl-md rounded-bl-md sm:rounded-tr-3xl sm:rounded-br-3xl h-[264px] min-w-[378px]">
+            <h2 className="pr-2">03</h2>
+            <div className="flex flex-col gap-2 border-l border-black border-dashed px-2">
+              <p className="uppercase font-[500] min-h-[48px] mt-2">
+                Receive Fast Delivery & Support
+              </p>
+              <p className="text-[20px]">
+                We manage{" "}
+                <span className="text-green">
+                  quality, logistics, and updates
+                </span>
+                —so you can focus on your customers, backed by Trampoline.
+              </p>
+            </div>
+          </div>
+          <div className="bg-white border-6 border-primary-accent rounded-full p-3 absolute left-[180px] top-[240px] rotate-90 sm:rotate-0 sm:left-[378px] sm:top-[180px]">
+            <Icon src="/icons/arrow-right.svg" width={24} height={24} />
+          </div>
+          <div className="bg-white border-6 border-primary-accent rounded-full p-3 absolute left-[180px] top-[520px] rotate-90 sm:left-[772px] sm:rotate-0 sm:top-[180px]">
+            <Icon src="/icons/arrow-right.svg" width={24} height={24} />
+          </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <Button className="bg-secondary-accent">
+            Create My Free Account
+          </Button>
+          <p className="mt-2">Easy signup process. Get browsing in minutes!</p>
+        </div>
+      </section>
+    );
+  };
+
   return (
     <section className="max-w-[1200px] mx-auto">
       {heroSection()}
       {registerSection()}
       {featuresSection()}
+      {createAccountSection()}
       {testimonials()}
       {reassuranceSection()}
       {promotionSection()}
       {faqSection()}
+      {callOutAndContactSection()}
     </section>
   );
 }

@@ -9,6 +9,8 @@
   --color-secondary-accent: #1D404C;
   --color-secondary-surface: rgba(252,252,252, 0.3);
   --color-surface-light: #FAFAFA;
+  --color-sky-blue: #0481AC;
+  --color-green: #29B000;
 }
 
 :root {
