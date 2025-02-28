@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Trampoline Assignment",
 };
 
-export const macFont = localFont({
+const macFont = localFont({
   src: [
     {
       path: '../../public/fonts/blinkmacsystemfont-light.ttf',
