@@ -2,6 +2,7 @@ import Icon from "@/components/common/icon";
 import IconCard from "@/components/common/icon-card";
 import InfoPanel from "@/components/common/info-panel";
 import TestimonialCard from "@/components/common/testimonial-card";
+import AnalyticsSection from "@/components/pages/home/AnalyticsSection";
 import {
   Accordion,
   AccordionContent,
@@ -485,6 +486,7 @@ export default function Home() {
       {createAccountSection()}
       {testimonials()}
       {reassuranceSection()}
+      <AnalyticsSection/>
       {promotionSection()}
       {faqSection()}
       {callOutAndContactSection()}
