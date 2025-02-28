@@ -49,7 +49,7 @@ export function CountrySelector() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className={clsx("w-[200px] justify-between bg-surface-light", `${value ? "text-black" : "text-[#7D7D86]"}`)}
+          className={clsx("w-[200px] justify-between bg-surface-light selector-trigger py-5", `${value ? "text-black" : "text-[#7D7D86]"}`)}
         >
           {value
             ? frameworks.find((framework) => framework.value === value)?.label

@@ -168,3 +168,7 @@ h3{
 h4{
   font-size: 18px;
 }
+.selector-trigger{
+  border: 1px solid #090302;
+  border-radius: 0px !important;
+}
