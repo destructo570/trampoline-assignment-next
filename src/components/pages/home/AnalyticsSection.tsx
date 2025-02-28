@@ -8,7 +8,7 @@ const AnalyticsSection = () => {
     {
       img: "/images/image_5.png",
       title: "Mirrors",
-      sub_title: "Avg. Retail Margin: 35%",
+      sub_title: "ARM: 35%",
     },
     { img: "/images/image_6.png", title: "Rugs", sub_title: "ARM: 45%+" },
     { img: "/images/image_7.png", title: "Furnitures", sub_title: "ARM: 65%+" },
