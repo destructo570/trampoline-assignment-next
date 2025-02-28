@@ -8,16 +8,18 @@ const InfoPanel = ({
   iconSrc = "",
   isActive = false,
   size = "small",
+  rowReverse = false,
 }) => {
   return (
     <div
       className={clsx("flex gap-8 items-start p-4", {
         "bg-primary-accent rounded-lg": isActive,
+        "flex-row-reverse text-right": rowReverse,
       })}
     >
       <Icon src={iconSrc} />
       <div>
-        {(size ==="small" ? <h4>{title}</h4> : <h3>{title}</h3>)}
+        {size === "small" ? <h4>{title}</h4> : <h3>{title}</h3>}
         {description ? <p>{description}</p> : null}
       </div>
     </div>
